@@ -1,0 +1,11 @@
+version: '3.2'
+services:
+  xlsx-converter:
+    container_name: xlsx-converter
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: 'no'
+    image: xlsx-converter:latest
+    ports:
+    - "8888:8888"
